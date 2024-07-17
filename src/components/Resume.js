@@ -1,13 +1,14 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import '../App.css';
+import Resumes from '../assets/resume.pdf'
 
 const Resume = () => {
   const educationDetails = [
     {
       school: 'Rajiv Gandhi Institute of Technology, Kottayam',
       degree: 'B.Tech in Computer Science & Engineering',
-      duration: '2022 - 2025',
+      duration: '2021 - 2025',
     },
 
     {
@@ -44,7 +45,8 @@ const Resume = () => {
                 </Col>
               ))}
               <div className="text-center w-100 mt-4">
-                <button className="download-cv-button" href="/path/to/your/cv.pdf" download>DOWNLOAD CV</button>
+              <a className="download-cv-button" style={{textDecoration:"none"}} href={Resumes} download>DOWNLOAD CV
+              </a>
               </div>
             </Row>
           </Col>

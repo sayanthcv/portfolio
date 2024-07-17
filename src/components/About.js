@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Image, Button } from 'react-bootstrap';
 import '../App.css';
 import Profile from '../assets/profile.jpg';
-
+import Resume from '../assets/resume.pdf'
 const About = () => {
   return (
     <>
@@ -29,7 +29,8 @@ const About = () => {
                 Hello! I'm Sayanth C V, a passionate software developer. I specialize in creating dynamic and beautiful web pages. A motivated and dedicated final-year Computer Science and Engineering student seeking an opportunity to apply technical skills and contribute to a dynamic team. Passionate about software development and problem-solving.
               </p>
               <div className="text-center">
-                <button className="download-cv-button" href="/path/to/your/cv.pdf" download>DOWNLOAD CV</button>
+              <a className="download-cv-button" style={{textDecoration:"none"}} href={Resume} download>DOWNLOAD CV
+              </a>
               </div>
             </Col>
           </Row>
